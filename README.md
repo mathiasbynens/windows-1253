@@ -2,7 +2,7 @@
 
 _windows-1253_ is a robust JavaScript implementation of [the windows-1253 character encoding as defined by the Encoding Standard](http://encoding.spec.whatwg.org/#windows-1253).
 
-This encoding is known under the following names: cp1253, windows-1253, x-cp1253, and x-cp1253.
+This encoding is known under the following names: cp1253, windows-1253, and x-cp1253.
 
 ## Installation
 
