@@ -24,7 +24,7 @@
 
 	// The `windows1253` object to test
 	var windows1253 = root.windows1253 || (root.windows1253 = (
-		windows1253 = load('../windows1253.js') || root.windows1253,
+		windows1253 = load('../windows-1253.js') || root.windows1253,
 		windows1253 = windows1253.windows1253 || windows1253
 	));
 
