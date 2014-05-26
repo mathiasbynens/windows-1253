@@ -1,4 +1,4 @@
-# windows-1253 [![Build status](https://travis-ci.org/mathiasbynens/windows-1253.svg?branch=master)](https://travis-ci.org/mathiasbynens/windows-1253) [![Dependency status](https://gemnasium.com/mathiasbynens/windows-1253.svg)](https://gemnasium.com/mathiasbynens/windows-1253)
+# windows-1253 [![Build status](https://travis-ci.org/mathiasbynens/windows-1253.svg?branch=master)](https://travis-ci.org/mathiasbynens/windows-1253) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/windows-1253/master.svg)](https://coveralls.io/r/mathiasbynens/windows-1253) [![Dependency status](https://gemnasium.com/mathiasbynens/windows-1253.svg)](https://gemnasium.com/mathiasbynens/windows-1253)
 
 _windows-1253_ is a robust JavaScript implementation of [the windows-1253 character encoding as defined by the Encoding Standard](http://encoding.spec.whatwg.org/#windows-1253).
 
