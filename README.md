@@ -1,4 +1,4 @@
-# windows-1253 [![windows-1253 on npm](https://img.shields.io/npm/v/windows-1253)](https://www.npmjs.com/package/windows-1253)
+# windows-1253 [![Build status](https://github.com/mathiasbynens/windows-1253/workflows/run-checks/badge.svg)](https://github.com/mathiasbynens/windows-1253/actions?query=workflow%3Arun-checks) [![windows-1253 on npm](https://img.shields.io/npm/v/windows-1253)](https://www.npmjs.com/package/windows-1253)
 
 _windows-1253_ is a robust JavaScript implementation of [the windows-1253 character encoding as defined by the Encoding Standard](https://encoding.spec.whatwg.org/#windows-1253).
 
