@@ -1,6 +1,6 @@
-const assert = require('assert');
+import assert from 'node:assert';
 
-const windows1253 = require('../windows-1253.js');
+import * as windows1253 from '../windows-1253.mjs';
 
 console.log('Testing `windows1253.encode`…');
 assert.strictEqual(
@@ -109,3 +109,7 @@ assert.throws(
 	Error,
 	'Mode names are case-insensitive'
 );
+
+console.log('Testing `windows1253.labels`…');
+assert.ok(Array.isArray(windows1253.labels));
+assert.ok(windows1253.labels.length > 0);
