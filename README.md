@@ -1,4 +1,4 @@
-# windows-1253 [![Build status](https://travis-ci.org/mathiasbynens/windows-1253.svg?branch=master)](https://travis-ci.org/mathiasbynens/windows-1253) [![Code coverage status](https://coveralls.io/repos/mathiasbynens/windows-1253/badge.svg)](https://coveralls.io/r/mathiasbynens/windows-1253) [![Dependency status](https://gemnasium.com/mathiasbynens/windows-1253.svg)](https://gemnasium.com/mathiasbynens/windows-1253)
+# windows-1253 [![windows-1253 on npm](https://img.shields.io/npm/v/windows-1253)](https://www.npmjs.com/package/windows-1253)
 
 _windows-1253_ is a robust JavaScript implementation of [the windows-1253 character encoding as defined by the Encoding Standard](https://encoding.spec.whatwg.org/#windows-1253).
 
@@ -18,32 +18,10 @@ In a browser:
 <script src="windows-1253.js"></script>
 ```
 
-In [Node.js](https://nodejs.org/), [io.js](https://iojs.org/), [Narwhal](http://narwhaljs.org/), and [RingoJS](http://ringojs.org/):
+In [Node.js](https://nodejs.org/):
 
 ```js
-var windows1253 = require('windows-1253');
-```
-
-In [Rhino](https://www.mozilla.org/rhino/):
-
-```js
-load('windows1253.js');
-```
-
-Using an AMD loader like [RequireJS](http://requirejs.org/):
-
-```js
-require(
-  {
-    'paths': {
-      'windows-1253': 'path/to/windows-1253'
-    }
-  },
-  ['windows-1253'],
-  function(windows1253) {
-    console.log(windows1253);
-  }
-);
+const windows1253 = require('windows-1253');
 ```
 
 ## API
@@ -68,7 +46,7 @@ The optional `options` object and its `mode` property can be used to set the [er
 
 ```js
 const encodedData = windows1253.encode(text, {
-  'mode': 'html'
+  mode: 'html'
 });
 // If `text` contains a symbol that cannot be represented in windows-1253,
 // instead of throwing an error, it will return an HTML entity for the symbol.
@@ -86,17 +64,13 @@ The optional `options` object and its `mode` property can be used to set the [er
 
 ```js
 const text = windows1253.decode(encodedData, {
-  'mode': 'fatal'
+  mode: 'fatal'
 });
 // If `encodedData` contains an invalid byte for the windows-1253 encoding,
 // instead of replacing it with U+FFFD in the output, an error is thrown.
 ```
 
 For decoding a buffer (e.g. from `fs.readFile`) use `buffer.toString('binary')` to get the byte string which `decode` takes.
-
-## Support
-
-_windows-1253_ is designed to work in at least Node.js v0.10.0, io.js v1.0.0, Narwhal 0.3.2, RingoJS 0.8-0.11, PhantomJS 1.9.0, Rhino 1.7RC4, as well as old and modern versions of Chrome, Firefox, Safari, Opera, Edge, and Internet Explorer.
 
 ## Notes
 
