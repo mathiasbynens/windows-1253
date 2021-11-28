@@ -28,8 +28,10 @@
 	"bugs": "https://github.com/mathiasbynens/windows-1253/issues",
 	"files": [
 		"LICENSE-MIT.txt",
-		"windows-1253.mjs"
+		"windows-1253.mjs",
+		"windows-1253.d.ts"
 	],
+	"types": "windows-1253.d.ts",
 	"scripts": {
 		"download": "curl https://encoding.spec.whatwg.org/index-windows-1253.txt > data/index.txt",
 		"build": "node scripts/transform-data.js",
